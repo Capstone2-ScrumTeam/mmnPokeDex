@@ -25,26 +25,36 @@ class Newsletter extends Component {
   };
 
   handleReset = () => {
-    this.state = {
-      submitted: false,
-      firstName: "",
-      lastName: "",
-      email: "",
-    };
+    this.setState(() => {
+      return {
+        submitted: false,
+        firstName: "",
+        lastName: "",
+        email: "",
+      };
+    });
   };
 
   render() {
     if (this.state.submitted === true && this.state.email === "") {
       return (
         <section>
-          <p>Hey Stupid {this.state.firstName}, write your email.</p>
+          <p>
+            {" "}
+            Hey there {this.state.firstName} {this.state.lastName} ! please fill
+            out your email
+          </p>
           <button onClick={this.handleReset}>RESET FIELDS</button>
         </section>
       );
     } else if (this.state.submitted === true) {
       return (
         <section>
-          <p>Thanks FAM {this.state.firstName} for signing up</p>
+          <p>
+            {" "}
+            Thank you very much {this.state.firstName} {this.state.lastName} for
+            signing up our newsletter!
+          </p>
           <button onClick={this.handleReset}>RESET FIELDS</button>
         </section>
       );
@@ -52,7 +62,7 @@ class Newsletter extends Component {
       return (
         <div>
           <form onSubmit={this.handleSubmit}>
-            <label>First Name: </label>
+            <label htmlFor="firstName">First Name: </label>
             <input
               type="text"
               id="firstName"
@@ -61,7 +71,7 @@ class Newsletter extends Component {
               onChange={this.handleChange}
             ></input>
             {"\n"}
-            <label>Last Name: </label>
+            <label htmlFor="lastName">Last Name: </label>
             <input
               type="text"
               id="lastName"
@@ -70,18 +80,16 @@ class Newsletter extends Component {
               onChange={this.handleChange}
             ></input>
             {"\n"}
-            <label>Email: </label>
+            <label htmlFor="email">Email: </label>
             <input
               type="email"
-              id="useremail"
+              id="email"
               name="email"
               value={this.state.email}
               onChange={this.handleChange}
             ></input>
             <button>SUBMIT</button>
           </form>
-          <h1>Mooooe</h1>
-          <h1>Mooooe</h1>
         </div>
       );
   }
