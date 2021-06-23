@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Pokedex extends Component {
+class PokeAbilities extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class Pokedex extends Component {
     }
 }
 
-export default Pokedex;
+export default PokeAbilities;

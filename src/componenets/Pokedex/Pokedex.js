@@ -25,6 +25,7 @@ class Pokedex extends Component {
       <section>
         <h2>Pokemon: {name}</h2>
         <img src={imageSrc} alt={name} />
+
       </section>
     );
   }
