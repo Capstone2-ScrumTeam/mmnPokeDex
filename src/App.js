@@ -8,7 +8,7 @@ import Newsletter from './components/Newsletter/Newsletter';
 
 function App() {
   return (
-    <div className="ColorTest">
+    <div>
       <header>
         <Navigation />
       </header>

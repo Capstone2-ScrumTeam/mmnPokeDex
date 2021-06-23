@@ -21,7 +21,7 @@ class Navigation extends Component {
                         </Nav.Link>
                         <Nav.Link>
                             <Link className="FixingLink" to="/content"> 
-                                Content 
+                                PokeDex 
                             </Link>
                         </Nav.Link>
                         <Nav.Link>

@@ -1,9 +1,27 @@
 
 .p-3{
     margin: auto;
-    width: 50%;
+    width: 40%;
     border: none;
     padding: 60px;
     
     
 }
+
+.picturename{
+    background-image: url(C:\Users\hanse\Documents\Pokedex-Capstone2\mmnpokedex-capstone2\src\components\assets\bg3.png);
+    min-height: 91.5vh;
+}
+.home-logo{
+    left: px;
+    border: 0px;
+
+}
+.home-logo img{
+    position: relative;
+    size: 0pt;
+    right: 100px;
+    bottom: 0px;
+    height: 60vmin;
+    
+  }
