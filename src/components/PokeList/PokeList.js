@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./PokeList.css";
 import Pokedex from "../Pokedex/Pokedex";
-//import PokeAbilities from "../PokeAbilities/PokeAbilities";
 
 class PokeList extends Component {
   state = {

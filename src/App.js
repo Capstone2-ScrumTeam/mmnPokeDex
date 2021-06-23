@@ -5,8 +5,8 @@ import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Newsletter from "./components/Newsletter/Newsletter";
 import { Switch, Route } from "react-router-dom";
-import PokeList from "./componenets/PokeList/PokeList";
-import PokeAbilities from "./componenets/PokeAbilities/PokeAbilities";
+import PokeList from "./components/PokeList/PokeList";
+import PokeAbilities from "./components/PokeAbilities/PokeAbilities";
 
 function App() {
   return (
