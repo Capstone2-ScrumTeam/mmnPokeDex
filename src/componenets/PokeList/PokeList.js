@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-//import { Link } from "react-router-dom";
 import "./PokeList.css";
 import Pokedex from "../Pokedex/Pokedex";
-import PokeAbilities from "../PokeAbilities/PokeAbilities";
+//import PokeAbilities from "../PokeAbilities/PokeAbilities";
 
 class PokeList extends Component {
   state = {
@@ -10,7 +9,7 @@ class PokeList extends Component {
   };
 
   componentDidMount() {
-    fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=151")
+    fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=5")
       .then((response) => response.json())
       .then((data) => this.setState({ pokemons: data.results }))
       .catch(console.log);
@@ -19,10 +18,12 @@ class PokeList extends Component {
   render() {
     const { pokemons } = this.state;
     const pokemonListItems = pokemons.map(({ url, name }) => {
+      url = url.split("/");
+      const id = url[url.length - 2];
       return (
         <li key={url}>
-          <Pokedex url={url}/>
-          <PokeAbilities url={url}/>
+          <Pokedex url={url} id={id}/>
+          
         </li>
       );
     });

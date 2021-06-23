@@ -1,11 +1,12 @@
-import Pokedex from "./componenets/Pokedex/Pokedex";
 import "./App.css";
 import About from "./components/About/About";
 import Content from "./components/Content/Content";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Newsletter from "./components/Newsletter/Newsletter";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import PokeList from "./componenets/PokeList/PokeList";
+import PokeAbilities from "./componenets/PokeAbilities/PokeAbilities";
 
 function App() {
   return (
@@ -31,10 +32,9 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/pokemons">
-            <Redirect to="/" />
-          </Route>
-          <Route path="/pokemons/:id" component={Pokedex} />
+
+          <Route exact path="/pokemons" component={PokeList} />
+          <Route exact path="/pokemons/:id" component={PokeAbilities} />
         </Switch>
       </main>
     </div>

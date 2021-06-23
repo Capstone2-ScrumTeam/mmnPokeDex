@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-
+import {  Link } from "react-router-dom";
 
 class Pokedex extends Component {
   state = {
-    
     imageSrc: "",
     name: "",
   };
@@ -20,12 +19,12 @@ class Pokedex extends Component {
   render() {
     const {  imageSrc, name } = this.state;
     
-
     return (
       <section>
         <h2>{name}</h2>
+        <Link to={`/pokemons/${this.props.id}`}>
         <img src={imageSrc} alt={name} />
-
+        </Link>
       </section>
     );
   }

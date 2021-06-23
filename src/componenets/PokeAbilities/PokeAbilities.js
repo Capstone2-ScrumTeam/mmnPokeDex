@@ -6,8 +6,11 @@ class PokeAbilities extends Component {
         
       };
       componentDidMount() {
-    
-        fetch(this.props.url)
+    const id = this.props.match.params.id;
+
+
+
+        fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
           .then((response) => response.json())
           .then(({ abilities}) =>
             this.setState({ abilities})
@@ -22,7 +25,7 @@ class PokeAbilities extends Component {
     
         return (
           <section>
-            
+            <h3>Here are some abilities:</h3>
             <ul>{abilityListItems}</ul>
           </section>
         );
