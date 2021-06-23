@@ -16,11 +16,11 @@ class Home extends Component {
                 
                     <Jumbotron>
                         
-                        <h1 className="header">Welcome to our Pokedex </h1>
+                        <h1 className="header">Welcome to the Pokedex </h1>
                         <p>
                             Various number of pokemon have been catalogued
                             <br></br>
-                            here 
+                            here and you can find all the information you need
                         </p>
                         <p>
                                 <Link to="/content">
