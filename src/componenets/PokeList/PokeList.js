@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./PokeList.css";
+import Pokedex from "../Pokedex/Pokedex";
 
 class PokeList extends Component {
   state = {
@@ -17,11 +18,9 @@ class PokeList extends Component {
   render() {
     const { pokemons } = this.state;
     const pokemonListItems = pokemons.map(({ url, name }) => {
-      url = url.split("/");
-      const id = url[url.length - 2];
       return (
         <li key={url}>
-          <Link to={`/pokemons/${id}`}>{name}</Link>
+          <Pokedex url={url}/>
         </li>
       );
     });
