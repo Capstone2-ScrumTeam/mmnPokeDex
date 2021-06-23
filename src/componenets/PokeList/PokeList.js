@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import { Link } from "react-router-dom";
 import "./PokeList.css";
 import Pokedex from "../Pokedex/Pokedex";
+import PokeAbilities from "../PokeAbilities/PokeAbilities";
 
 class PokeList extends Component {
   state = {
@@ -21,6 +22,7 @@ class PokeList extends Component {
       return (
         <li key={url}>
           <Pokedex url={url}/>
+          <PokeAbilities url={url}/>
         </li>
       );
     });
