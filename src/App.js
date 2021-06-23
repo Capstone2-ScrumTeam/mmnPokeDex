@@ -1,8 +1,8 @@
 import "./App.css";
-import About from "./components/About/About";
+//import About from "./components/About/About";
 import Content from "./components/Content/Content";
 import Navigation from "./components/Navigation/Navigation";
-import Home from "./components/Home/Home";
+//import Home from "./components/Home/Home";
 import Newsletter from "./components/Newsletter/Newsletter";
 import { Switch, Route } from "react-router-dom";
 import PokeList from "./components/PokeList/PokeList";
@@ -19,9 +19,9 @@ function App() {
 
       <main>
         <Switch>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <Home />
-          </Route>
+          </Route> */}
 
           <Route exact path="/content">
             <Content />
@@ -29,9 +29,9 @@ function App() {
           <Route exact path="/newsletter">
             <Newsletter />
           </Route>
-          <Route exact path="/about">
+          {/* <Route exact path="/about">
             <About />
-          </Route>
+          </Route> */}
 
           <Route exact path="/pokemons" component={PokeList} />
           <Route exact path="/pokemons/:id" component={PokeAbilities} />
