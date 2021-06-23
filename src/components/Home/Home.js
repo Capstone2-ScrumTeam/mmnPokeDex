@@ -9,9 +9,9 @@ class Home extends Component {
     render() {
         return (
             <div className="picturename">
-                <div className="home-logo">
+                    <div className="home-logo">
                             <img src={headerimg} alt="logo" />
-                        </div>
+                    </div>
                 <Container className="p-3">
                 
                     <Jumbotron>
