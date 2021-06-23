@@ -13,7 +13,7 @@ class Navigation extends Component {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/pokemons">All Pokemons</Link>
+            <Link to="/pokemon">Pokemons</Link>
           </li>
         </ul>
       </nav>

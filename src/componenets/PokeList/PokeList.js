@@ -25,7 +25,7 @@ class PokeList extends Component {
       const id = url[url.length - 2];
       return (
         <li key={url}>
-          <Link to={`/pokemons/${id}`}>{name}</Link>
+          <Link to={`/pokemon/${id}`}>{name}</Link>
         </li>
       );
     });

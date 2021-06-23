@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class PokeAbilities extends Component {
+class Pokedex extends Component {
   state = {
     abilities: [],
     imageSrc: "",
@@ -37,4 +37,4 @@ class PokeAbilities extends Component {
     );
   }
 }
-export default PokeAbilities;
+export default Pokedex;
