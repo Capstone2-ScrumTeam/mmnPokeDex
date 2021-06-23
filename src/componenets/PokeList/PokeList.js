@@ -1,18 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./PokeList.css";
 
 class PokeList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      pokemons: [],
-    };
-  }
+  state = {
+    pokemons: [],
+  };
 
   componentDidMount() {
-    //const { pokeId } = this.state;
-    fetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=151`)
+    fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=151")
       .then((response) => response.json())
       .then((data) => this.setState({ pokemons: data.results }))
       .catch(console.log);
@@ -25,7 +21,7 @@ class PokeList extends Component {
       const id = url[url.length - 2];
       return (
         <li key={url}>
-          <Link to={`/pokemon/${id}`}>{name}</Link>
+          <Link to={`/pokemons/${id}`}>{name}</Link>
         </li>
       );
     });
@@ -37,5 +33,4 @@ class PokeList extends Component {
     );
   }
 }
-
 export default PokeList;

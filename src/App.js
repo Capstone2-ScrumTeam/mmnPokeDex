@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+
           <Route exact path="/content">
             <Content />
           </Route>
@@ -33,7 +34,7 @@ function App() {
           <Route exact path="/pokemons">
             <Redirect to="/" />
           </Route>
-          <Route path="/pokemon/:id" component={Pokedex} />
+          <Route path="/pokemons/:id" component={Pokedex} />
         </Switch>
       </main>
     </div>
