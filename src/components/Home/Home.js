@@ -9,11 +9,13 @@ class Home extends Component {
     render() {
         return (
             <div className="picturename">
-                <Container className="p-3">
-                    <Jumbotron fluid>
-                        <div className="home-logo">
-                        <img src={headerimg} alt="logo" />
+                <div className="home-logo">
+                            <img src={headerimg} alt="logo" />
                         </div>
+                <Container className="p-3">
+                
+                    <Jumbotron>
+                        
                         <h1 className="header">Welcome to our Pokedex </h1>
                         <p>
                             Various number of pokemon have been catalogued
@@ -21,12 +23,9 @@ class Home extends Component {
                             here 
                         </p>
                         <p>
-                        
                                 <Link to="/content">
                                 <Button variant="primary">Learn more</Button>
-                                </Link>
-                                    
-                            
+                                </Link>     
                     </p>
                 </Jumbotron> 
                 </Container>
