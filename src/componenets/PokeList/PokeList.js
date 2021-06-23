@@ -9,7 +9,7 @@ class PokeList extends Component {
   };
 
   componentDidMount() {
-    fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=5")
+    fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=151")
       .then((response) => response.json())
       .then((data) => this.setState({ pokemons: data.results }))
       .catch(console.log);
@@ -18,18 +18,18 @@ class PokeList extends Component {
   render() {
     const { pokemons } = this.state;
     const pokemonListItems = pokemons.map(({ url, name }) => {
-      url = url.split("/");
-      const id = url[url.length - 2];
+      let id = url.split("/");
+      console.log(id);
+      id = id[id.length - 2];
+
       return (
-        <li key={url}>
-          <Pokedex url={url} id={id}/>
-          
+        <li className="poke-list" key={url}>
+          <Pokedex className="pokedex" url={url} id={id} />
         </li>
       );
     });
     return (
-      <section>
-        <h3>Here are a list of pokemons:</h3>
+      <section className="flex-container">
         <ol>{pokemonListItems}</ol>
       </section>
     );
