@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class PokeList extends Component {
   constructor(props) {
@@ -9,28 +10,30 @@ class PokeList extends Component {
     };
   }
 
-  getPokemon = (event) => {
-    event.preventDefault();
+  componentDidMount() {
     //const { pokeId } = this.state;
     fetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=151`)
       .then((response) => response.json())
-      .then((data) =>
-        this.setState({
-          pokemons: data,
-        })
-      )
-      .catch((error) => console.log(error));
-  };
+      .then((data) => this.setState({ pokemons: data.results }))
+      .catch(console.log);
+  }
+
   render() {
-    const pokemonListItems = this.state.pokemons.map((pokemon, index) => {
-      return <li key={`${pokemon.name}-${index}`}>{pokemon.name}</li>;
+    const { pokemons } = this.state;
+    const pokemonListItems = pokemons.map(({ url, name }) => {
+      url = url.split("/");
+      const id = url[url.length - 2];
+      return (
+        <li key={url}>
+          <Link to={`/pokemons/${id}`}>{name}</Link>
+        </li>
+      );
     });
     return (
-      <div>
-        <h2>List of Pokemon</h2>
-
-        <ul>{pokemonListItems}</ul>
-      </div>
+      <section>
+        <h3>Here are a list of pokemons:</h3>
+        <ol>{pokemonListItems}</ol>
+      </section>
     );
   }
 }
