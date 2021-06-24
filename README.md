@@ -5,7 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/83613888/123327890-e5fdc400-d508-11eb-954e-980f4645931e.png)
 
-List of technologies used:
+*List of technologies used:*
 -  Node 
 -  VSC
 -  Github
@@ -15,7 +15,7 @@ List of technologies used:
 -  React & React Bootstrap - Jumbotron
 
 
-Installation Instructions 
+*Installation Instructions* 
 
 1.Fork the code to your local computer.
 
@@ -25,6 +25,6 @@ Installation Instructions
 2.Start your application in your local browser after installing
     -npm start
     
-API used: 
+*API used:* 
 https://pokeapi.co/
 
