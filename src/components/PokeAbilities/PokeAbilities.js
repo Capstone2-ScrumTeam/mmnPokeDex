@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import "./PokeAbilities.css";
+import Container from "react-bootstrap/Container";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 class PokeAbilities extends Component {
   state = {
@@ -8,6 +11,7 @@ class PokeAbilities extends Component {
     height: "",
     weight: "",
   };
+
   componentDidMount() {
     const {
       match: {
@@ -35,14 +39,20 @@ class PokeAbilities extends Component {
     });
 
     return (
-      <section>
-        <img src={imageSrc} alt={name} />
-        <p>
-          {name} weights {weight} lbs and is {height} meters tall.
-        </p>
-        <p>Here are some of {name}'s abilities:</p>
-        <ul>{abilityListItems}</ul>
-      </section>
+      <div className="picturename">
+        <Container>
+          <Jumbotron>
+            <section>
+              <img src={imageSrc} alt={name} />
+              <p>
+                {name} weights {weight} lbs and is {height} meters tall.
+              </p>
+              <p>Here are some of {name}'s abilities:</p>
+              <ul>{abilityListItems}</ul>
+            </section>
+          </Jumbotron>
+        </Container>
+      </div>
     );
   }
 }

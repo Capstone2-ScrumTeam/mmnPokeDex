@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./PokeList.css";
 import Pokedex from "../Pokedex/Pokedex";
+import Container from "react-bootstrap/Container";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 class PokeList extends Component {
   state = {
@@ -28,9 +30,15 @@ class PokeList extends Component {
       );
     });
     return (
-      <section className="flex-container">
-        <ol>{pokemonListItems}</ol>
-      </section>
+      <div className="picturename">
+        <Container className="p-3">
+          <Jumbotron>
+            <section>
+              <ol>{pokemonListItems}</ol>
+            </section>
+          </Jumbotron>
+        </Container>
+      </div>
     );
   }
 }

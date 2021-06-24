@@ -11,8 +11,8 @@ class About extends Component {
       <div className="aboutpage">
         <h1>Meet the Team</h1>
         <Team name="Mimi" />
-        <Team name2="Moe" />
-        <Team name3="Ning" />
+        <Team name="Moe" />
+        <Team name="Ning" />
       </div>
     );
   }
