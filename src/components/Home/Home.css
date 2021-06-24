@@ -1,27 +1,22 @@
-
-.p-3{
-    margin: auto;
-    width: 40%;
-    border: none;
-    padding: 60px;
-    
-    
+.p-3 {
+  margin: auto;
+  width: 40%;
+  border: none;
+  padding: 60px;
 }
 
-.picturename{
-    background-image: url(C:\Users\hanse\Documents\Pokedex-Capstone2\mmnpokedex-capstone2\src\components\assets\bg3.png);
-    min-height: 91.5vh;
+.picturename {
+  background-image: url(../assets/bg3.png);
+  min-height: 91.5vh;
 }
-.home-logo{
-    left: 10px;
-
+.home-logo {
+  left: 10px;
 }
-.home-logo img{
-    position: relative;
-    right: 50px;
-    height: 60vmin;
-    padding-left: 10px;
-    margin-bottom: -50px;
-    margin-left: 20px;
-    
-  }
+.home-logo img {
+  position: relative;
+  right: 50px;
+  height: 60vmin;
+  padding-left: 10px;
+  margin-bottom: -50px;
+  margin-left: 20px;
+}
