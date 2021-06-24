@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import headerimg from "./imgfe.png";
 import "./Home.css";
+
 class Home extends Component {
   render() {
     return (
@@ -21,7 +22,7 @@ class Home extends Component {
               here
             </p>
             <p>
-              <Link to="/content">
+              <Link to="/pokemons">
                 <Button variant="primary">Learn more</Button>
               </Link>
             </p>
