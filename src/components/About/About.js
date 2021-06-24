@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./About.css";
+import mimi from "../assets/mimi.png";
+import moe from "../assets/moe.png";
+import ning from "../assets/ning.png";
 
 class About extends Component {
   render() {
@@ -7,53 +10,43 @@ class About extends Component {
       <div className="aboutpage">
         <div className="about-section">
           <h1>About Us Page</h1>
-          <p>Some text about who we are and what we do.</p>
-          <p>
-            Resize the browser window to see that this page is responsive by the
-            way.
-          </p>
+          <p>About the team and how to contact us!</p>
         </div>
         <h2 className="Teamtitle">Our Team</h2>
         <div className="row">
           <div className="column">
             <div className="card">
-              <img src="" alt="Mimi" />
+              <img src={mimi} alt="Mimi" />
               <div className="container">
                 <h2>Mimi</h2>
                 <p className="title">Scrum Master</p>
-                <p>Some information about them</p>
-                <p>Email goes here</p>
-                <p>
-                  <button className="button">Contact</button>
-                </p>
+                <p>Traveler + RV enthusiast</p>
+                <p>akuaamowusu96@gmail.com</p>
               </div>
             </div>
           </div>
           <div className="column">
             <div className="card">
-              <img src="" alt="Moe" />
+              <img src={moe} alt="Moe" />
               <div className="container">
                 <h2>Moe</h2>
                 <p className="title">Team Member</p>
-                <p>Some information about them</p>
-                <p>Email goes here</p>
-                <p>
-                  <button className="button">Contact</button>
-                </p>
+                <p>I'm Moe and I like soccer.</p>
+                <p>moethantkoko@gmail.com </p>
               </div>
             </div>
           </div>
           <div className="column">
             <div className="card">
-              <img src="" alt="Ning" />
+              <img src={ning} alt="Ning" />
               <div className="container">
                 <h2>Ning</h2>
                 <p className="title">Team Member</p>
-                <p>Some information about them</p>
-                <p>Email goes here</p>
                 <p>
-                  <button className="button">Contact</button>
+                  Some of my hobbies are basketball, lifting weights, and video
+                  games!
                 </p>
+                <p>n.li9402@gmail.com</p>
               </div>
             </div>
           </div>
