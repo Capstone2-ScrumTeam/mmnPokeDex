@@ -4,6 +4,7 @@ import mimi from "../assets/mimi.png";
 import moe from "../assets/moe.png";
 import ning from "../assets/ning.png";
 
+
 class About extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class About extends Component {
           </div>
           <div className="column">
             <div className="card">
+
               <img src={moe} alt="Moe" />
               <div className="container">
                 <h2>Moe</h2>
@@ -47,6 +49,7 @@ class About extends Component {
                   games!
                 </p>
                 <p>n.li9402@gmail.com</p>
+
               </div>
             </div>
           </div>
@@ -55,5 +58,4 @@ class About extends Component {
     );
   }
 }
-
 export default About;
