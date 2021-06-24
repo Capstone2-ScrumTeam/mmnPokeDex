@@ -6,8 +6,12 @@
 }
 
 .picturename {
-  background-image: url("bg3.png");
+  background-image: url("./bg3.png");
   min-height: 91.5vh;
+}
+
+.home-logo {
+  left: 10px;
 }
 
 .home-logo img {
