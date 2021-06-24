@@ -9,9 +9,6 @@
   background-image: url(../assets/bg3.png);
   min-height: 91.5vh;
 }
-.home-logo {
-  left: 10px;
-}
 
 .home-logo img {
   position: relative;
