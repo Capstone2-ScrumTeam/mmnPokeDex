@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./About.css";
 
+
 class About extends Component {
   render() {
     return (
@@ -41,6 +42,7 @@ class About extends Component {
                   games!
                 </p>
                 <p>n.li9402@gmail.com</p>
+
               </div>
             </div>
           </div>
