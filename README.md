@@ -19,7 +19,7 @@ Installation Instructions
 
 1.Fork the code to your local computer.
 
-2.Install packages and dependencies
+2.Install/ import packages and dependencies
    - npm install
 
 2.Start your application in your local browser after installing
