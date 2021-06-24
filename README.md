@@ -1,4 +1,4 @@
-mmnPokeDex strives to be the most entertaining- yet valuable directory for Pokemon fantasy lovers to make informed decisions about the character they wish to embody next!
+*mmnPokeDex* strives to be the most entertaining- yet valuable directory for Pokemon fantasy lovers to make informed decisions about the character they wish to embody next!
 
 ![image](https://user-images.githubusercontent.com/83613888/123327824-d4b4b780-d508-11eb-8940-58a6e413211a.png)
 ![image](https://user-images.githubusercontent.com/83613888/123327934-f4e47680-d508-11eb-93ab-dae9107006c7.png)
