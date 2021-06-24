@@ -9,7 +9,7 @@
 }
 
 .picturename{
-    background-image: url(C:\Users\hanse\Documents\Pokedex-Capstone2\mmnpokedex-capstone2\src\components\assets\bg3.png);
+    background-image: url(./bg3.png);
     min-height: 91.5vh;
 }
 .home-logo{
