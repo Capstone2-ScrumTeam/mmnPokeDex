@@ -1,0 +1,52 @@
+.newsletterpic {
+  background-image: url("../assets/648602.jpg");
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.noemail {
+  background-image: url("../assets/one.jpg");
+  min-height: 91vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(252, 154, 25, 0.897);
+}
+.thanksemail {
+  background-image: url("../assets/happypika.png");
+  min-height: 91vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.formstyle {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+label {
+  width: 150px;
+  margin-top: 10px;
+  text-align: right;
+  display: inline-block;
+  font-weight: bolder;
+}
+.abutton {
+  background-color: rgb(122, 216, 34);
+  border-color: rgb(122, 216, 34);
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+.bbutton {
+  background-color: rgb(122, 216, 34);
+  border-color: rgb(122, 216, 34);
+  margin-right: 200px;
+}
+.thanksdiv {
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70px;
+}

@@ -1,0 +1,22 @@
+.poke-list {
+  display: inline-flex;
+  font-size: 14px;
+  border: 2px;
+  border-style: solid;
+  width: 200px;
+  height: 100%;
+  align-content: center;
+  padding-left: 10px;
+}
+
+.picturename {
+  background-image: url("../assets/bg.jpg");
+  min-height: 91.5vh;
+}
+
+.p-3 {
+  margin: auto;
+  width: 40%;
+  border: none;
+  padding: 60px;
+}
