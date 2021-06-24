@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./About.css";
-import mimi from "../assets/mimi.png";
-import moe from "../assets/moe.png";
-import ning from "../assets/ning.png";
 
 
 class About extends Component {
@@ -17,7 +14,6 @@ class About extends Component {
         <div className="row">
           <div className="column">
             <div className="card">
-              <img src={mimi} alt="Mimi" />
               <div className="container">
                 <h2>Mimi</h2>
                 <p className="title">Scrum Master</p>
@@ -28,8 +24,6 @@ class About extends Component {
           </div>
           <div className="column">
             <div className="card">
-
-              <img src={moe} alt="Moe" />
               <div className="container">
                 <h2>Moe</h2>
                 <p className="title">Team Member</p>
@@ -40,7 +34,6 @@ class About extends Component {
           </div>
           <div className="column">
             <div className="card">
-              <img src={ning} alt="Ning" />
               <div className="container">
                 <h2>Ning</h2>
                 <p className="title">Team Member</p>
