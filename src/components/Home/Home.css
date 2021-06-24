@@ -5,12 +5,11 @@
   padding: 60px;
 }
 
-.picturename {
-  background-image: url(./bg3.png);
-  min-height: 91.5vh;
-}
-.home-logo {
-  left: 10px;
+
+.picturename{
+    background-image: url(./bg3.png);
+    min-height: 91.5vh;
+
 }
 
 .home-logo img {

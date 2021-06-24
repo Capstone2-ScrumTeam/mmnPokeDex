@@ -7,6 +7,7 @@ import headerimg from "./imgfe.png";
 import "./Home.css";
 
 class Home extends Component {
+
   render() {
     return (
       <div className="picturename">
@@ -31,6 +32,7 @@ class Home extends Component {
       </div>
     );
   }
+
 }
 
 export default Home;
