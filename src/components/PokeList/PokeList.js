@@ -7,12 +7,13 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 class PokeList extends Component {
   state = {
     pokemons: [],
+    loading: true,
   };
 
   componentDidMount() {
     fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=151")
       .then((response) => response.json())
-      .then((data) => this.setState({ pokemons: data.results }))
+      .then((data) => this.setState({ pokemons: data.results, loading: false }))
       .catch(console.log);
   }
 
@@ -34,7 +35,11 @@ class PokeList extends Component {
         <Container className="p-3">
           <Jumbotron>
             <section>
-              <ol>{pokemonListItems}</ol>
+              {this.state.loading ? (
+                <h2>Loading...</h2>
+              ) : (
+                <ol>{pokemonListItems}</ol>
+              )}
             </section>
           </Jumbotron>
         </Container>
