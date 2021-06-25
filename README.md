@@ -28,3 +28,5 @@
 *API used:* 
 https://pokeapi.co/
 
+Deployed on Heroku:
+https://vast-caverns-60426.herokuapp.com/
